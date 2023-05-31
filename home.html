@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RYO ROOMS</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&family=Poppins:ital,wght@0,500;0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+  
+    <nav class="navbar navbar-expand-lg navbar-light bg-white px-lg-3 py-lg-2 sticky-top shadow-sm">
+        <div class="container-fluid">
+        <a class="navbar-brand me-5 fw-bold  fs-3 hfont" href="#">RYO ROOMS</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+            <a class="nav-link active me-3" aria-current="page" href="home.html">Home</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link me-3" href="#">ROOMS</a>
+            </li>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link me-3" href="#">FACILITIES</a>
+            </li>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link me-3" href="contact.html">CONTACT US</a>
+            </li>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link me-25" href="about.html">ABOUT</a>
+            </li>
+              
+            </ul>
+            <div class="flex mb-2">
+                <button type="button" class="btn btn-primary me-3 me-lg-2 shadow-none" data-bs-toggle="modal" data-bs-target="#loginmodal">
+                    Login
+                </button>
+            </div>
+            <div class="flex mb-2">
+                <button type="button" class="btn btn-primary me-3 me-lg-2 shadow-none" data-bs-toggle="modal" data-bs-target="#registrationmodal">
+                    Register
+                </button>
+            </div>        
+          </div>  
+         </div>
+        </div>
+    </nav>
+ <!-- login Modal -->
+        <div class="modal fade" id="loginmodal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">
+                    <i class="bi bi-person-square me-2 fs-3"></i>  User Login</h5>
+                <button type="reset" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label">Email address</label>
+                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleInputPassword1" class="form-label">Password</label>
+                          <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between">
+                        <button type="submit" class="btn btn-primary ">Login</button>
+                        <a href="#" class="text-decoration-none">Forgot Password</a>
+                        </div>
+                    </form>
+                </div>
+                
+            </div>
+            </div>
+        </div>
+ <!-- register Modal -->
+        <div class="modal fade" id="registrationmodal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">
+                  <i class="bi bi-person-vcard me-2 fs-3"></i>User Registration</h5>
+                <button type="reset" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <span class="badge bg-info text-dark mb-3 text-wrap lh-base">Note: Details must be match with id</span>
+                   <div class="container-fluiid">
+                    <div class="row">
+                        <div class="col-md-6 mb-2">
+                        
+                                <label for="exampleInputEmail1" class="form-label">Name</label>
+                                <input type="name" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                         </div>
+                         <div class="col-md-6 mb-2">
+                        
+                                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                         </div>
+                        <div class="col-md-6 mb-2">
+                        
+                                <label for="exampleInputEmail1" class="form-label">Phone Number</label>
+                                <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        </div>
+                        <div class="col-md-6 mb-2">
+                        
+                                <label for="exampleInputEmail1" class="form-label">Pcture</label>
+                                <input type="file" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        </div>
+                        <div class=" mb-3">
+
+                                <label for="exampleFormControlTextarea1" class="form-label">Address</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
+                            
+                         </div>
+                         <div class="col-md-6 mb-2">
+                            
+                                <label for="exampleInputEmail1" class="form-label">Pincode</label>
+                                <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        </div>
+                        <div class="col-md-6 mb-2">
+                        
+                                <label for="exampleInputEmail1" class="form-label">Date of Birth</label>
+                                <input type="date" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        </div>
+                        <div class="col-md-6 mb-2">
+                            
+                            <label for="exampleInputEmail1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                         </div>
+                        <div class="col-md-6 mb-2">
+                        
+                                <label for="exampleInputEmail1" class="form-label">Confirm Password</label>
+                                <input type="password" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        </div>
+                    </div>
+                   </div>
+                 </div>
+             </div>
+            </div>
+        </div>
+<!-- Swiper -->
+        <div class="swiper mySwiper mt-4 px-lg-3">
+            <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="pictures\6.jpg" class=" w-100  d-block" />
+            </div>
+            <div class="swiper-slide">
+                <img src="pictures\k4.jpeg" class="w-100 d-block"/>
+            </div>
+            <div class="swiper-slide">
+                <img src="pictures\k5.jpeg" class="w-100 d-block"/>
+            </div>
+            <div class="swiper-slide">
+                <img src="pictures\k7.jpeg" class="w-100 d-block"/>
+            </div>
+            <div class="swiper-slide">
+                <img src="pictures\k8.jpeg" class="w-100 d-block"/>
+            </div>
+            </div>
+               
+        </div>
+    
+<!--avialability-->
+        <div class="container availability mb-3">
+            <div class="row">
+                <div class="col-lg-12  p-4  rounded shadow" style="background-color:white; ">
+                    <h3>check availability</h3>
+                <form>
+                    <div class="row align-items-end">
+                        <div class="col-lg-3">
+                            <label for="exampleInputEmail1" class="form-label">check in</label>
+                            <input type="date" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        </div>
+                        <div class="col-lg-3">
+                            <label for="exampleInputEmail1" class="form-label">check out</label>
+                            <input type="date" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        </div>
+                        <div class="col-lg-3">
+                            <label for="exampleInputEmail1" class="form-label ">Adults</label>
+                            <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        </div>
+                        <div class="col-lg-3 mt-2">
+                            <button type="button" class="btn btn-outline-dark fw-bold me-3 me-lg-2 shadow-none" >
+                                submit
+                            </button>
+                        </div>
+                    </div>
+                </form>
+                </div>
+            </div>
+        </div>
+
+  <!--rooms-->
+        <H2 class="mt-5 text-center mb-5"> Rooms</H2>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="card shadow" style="width: 350px; margin: auto; border: none;">
+                        <img src="pictures/k12.jpeg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="mb-2 fw-bold">Single Room With Bathroom</h5>
+                            <span class="badge bg-success text-wrap lh-base mb-2">₹2000/month</span>
+                            <div class="features mt-2">
+                                <h6 class="mb-2 fw-bold">Features</h6>
+                                <span class="badge bg-light  text-dark  text-wrap lh-base">2 Beds</span>
+                                <span class="badge bg-light  text-dark text-wrap lh-base">1 Bathroom</span>
+                                <span class="badge bg-light text-dark  text-wrap lh-base ">Cooking Area</span>
+                                <span class="badge bg-light text-dark text-wrap lh-base">2 Adults</span>
+
+                            </div>
+                            <div class="facilities mt-4 mb-2">
+                                <h6 class="mb-2 fw-bold">Facilities</h6>
+                                <span class="badge bg-light  text-dark  text-wrap lh-base">24/7 Electric</span>
+                                <span class="badge bg-light  text-dark text-wrap lh-base">Driking Water</span>
+                                <span class="badge bg-light text-dark  text-wrap lh-base ">Fan and Light</span>
+                            </div>
+                            <div class="rating mt-4 mb-2">
+                                <h6 class="mb-2 fw-bold">Ratings</h6>
+                                <div class="container">
+                                    <i class="bi bi-star-fill" style="color:goldenrod;"></i>
+                                    <i class="bi bi-star-fill" style="color:goldenrod;"></i>
+                                    <i class="bi bi-star-fill" style="color:goldenrod;"></i>
+                                    <i class="bi bi-star-fill" style="color:goldenrod;"></i></div>
+                            </div>
+                            <div class="button mt-4 mb-2">
+                                <a href="#" class="btn btn-primary me-3 shadow-none">BOOK</a>
+                                <a href="#" class="btn btn btn-outline-dark fw-bold  me-lg-2 shadow-none ">More Info</a>
+                            </div>
+                        </div>
+                     </div>
+                </div>
+
+
+                <div class="col-lg-4">
+                    <div class="card shadow" style="width: 350px; margin: auto; border: none;">
+                        <img src="pictures/k12.jpeg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="mb-2 fw-bold">Single Room With Bathroom</h5>
+                            <span class="badge bg-success text-wrap lh-base mb-2">₹2000/month</span>
+                            <div class="features mt-2">
+                                <h6 class="mb-2 fw-bold">Features</h6>
+                                <span class="badge bg-light  text-dark  text-wrap lh-base">2 Beds</span>
+                                <span class="badge bg-light  text-dark text-wrap lh-base">1 Bathroom</span>
+                                <span class="badge bg-light text-dark  text-wrap lh-base ">Cooking Area</span>
+                                <span class="badge bg-light text-dark text-wrap lh-base">2 Adults</span>
+
+                            </div>
+                            <div class="facilities mt-4 mb-2">
+                                <h6 class="mb-2 fw-bold">Facilities</h6>
+                                <span class="badge bg-light  text-dark  text-wrap lh-base">24/7 Electric</span>
+                                <span class="badge bg-light  text-dark text-wrap lh-base">Driking Water</span>
+                                <span class="badge bg-light text-dark  text-wrap lh-base ">Fan and Light</span>
+                            </div>
+                            <div class="rating mt-4 mb-2">
+                                <h6 class="mb-2 fw-bold">Ratings</h6>
+                                <div class="container">
+                                    <i class="bi bi-star-fill" style="color:goldenrod;"></i>
+                                    <i class="bi bi-star-fill" style="color:goldenrod;"></i>
+                                    <i class="bi bi-star-fill" style="color:goldenrod;"></i>
+                                    <i class="bi bi-star-fill" style="color:goldenrod;"></i></div>
+                            </div>
+                            <div class="button mt-4 mb-2">
+                                <a href="#" class="btn btn-primary me-3 shadow-none">BOOK</a>
+                                <a href="#" class="btn btn btn-outline-dark fw-bold  me-lg-2 shadow-none ">More Info</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="col-lg-4">
+                    <div class="card shadow" style="width: 350px; margin: auto; border: none;">
+                        <img src="pictures/k12.jpeg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="mb-2 fw-bold">Single Room With Bathroom</h5>
+                            <span class="badge bg-success text-wrap lh-base mb-2">₹2000/month</span>
+                            <div class="features mt-2">
+                                <h6 class="mb-2 fw-bold">Features</h6>
+                                <span class="badge bg-light  text-dark  text-wrap lh-base">2 Beds</span>
+                                <span class="badge bg-light  text-dark text-wrap lh-base">1 Bathroom</span>
+                                <span class="badge bg-light text-dark  text-wrap lh-base ">Cooking Area</span>
+                                <span class="badge bg-light text-dark text-wrap lh-base">2 Adults</span>
+
+                            </div>
+                            <div class="facilities mt-4 mb-2">
+                                <h6 class="mb-2 fw-bold">Facilities</h6>
+                                <span class="badge bg-light  text-dark  text-wrap lh-base">24/7 Electric</span>
+                                <span class="badge bg-light  text-dark text-wrap lh-base">Driking Water</span>
+                                <span class="badge bg-light text-dark  text-wrap lh-base ">Fan and Light</span>
+                            </div>
+                            <div class="rating mt-4 mb-2">
+                                <h6 class="mb-2 fw-bold">Ratings</h6>
+                                <div class="container">
+                                    <i class="bi bi-star-fill" style="color:goldenrod;"></i>
+                                    <i class="bi bi-star-fill" style="color:goldenrod;"></i>
+                                    <i class="bi bi-star-fill" style="color:goldenrod;"></i>
+                                    <i class="bi bi-star-fill" style="color:goldenrod;"></i></div>
+                            </div>
+                            <div class="button mt-4 mb-2">
+                                <a href="#" class="btn btn-primary me-3 shadow-none">BOOK</a>
+                                <a href="#" class="btn btn btn-outline-dark fw-bold  me-lg-2 shadow-none ">More Info</a>
+                            </div>
+                        </div>
+                    </div>
+                 </div>
+
+                <div class="text-center  mt-4 mb-2">
+                        <a href="#" class="btn btn-primary me-3 me-lg-2 shadow-none">More Ro0ms >>></a>
+                            
+                </div>
+                
+            </div>
+        </div>
+
+ <!--apartments-->
+        <H2 class="mt-5 text-center mb-5"> Apartments</H2>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="card shadow" style="width: 350px; margin: auto; border: none;">
+                        <img src="pictures/k13.jpeg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="mb-2 fw-bold">Single Room With Bathroom</h5>
+                            <span class="badge bg-success text-wrap lh-base mb-2">₹2000/month</span>
+                            <div class="features mt-2">
+                                <h6 class="mb-2 fw-bold">Features</h6>
+                                <span class="badge bg-light  text-dark  text-wrap lh-base">2 Beds</span>
+                                <span class="badge bg-light  text-dark text-wrap lh-base">1 Bathroom</span>
+                                <span class="badge bg-light text-dark  text-wrap lh-base ">Cooking Area</span>
+                                <span class="badge bg-light text-dark text-wrap lh-base">2 Adults</span>
+
+                            </div>
+                            <div class="facilities mt-4 mb-2">
+                                <h6 class="mb-2 fw-bold">Facilities</h6>
+                                <span class="badge bg-light  text-dark  text-wrap lh-base">24/7 Electric</span>
+                                <span class="badge bg-light  text-dark text-wrap lh-base">Driking Water</span>
+                                <span class="badge bg-light text-dark  text-wrap lh-base ">Fan and Light</span>
+                            </div>
+                            <div class="rating mt-4 mb-2">
+                                <h6 class="mb-2 fw-bold">Ratings</h6>
+                                <div class="container">
+                                    <i class="bi bi-star-fill" style="color:goldenrod;"></i>
+                                    <i class="bi bi-star-fill" style="color:goldenrod;"></i>
+                                    <i class="bi bi-star-fill" style="color:goldenrod;"></i>
+                                    <i class="bi bi-star-fill" style="color:goldenrod;"></i></div>
+                            </div>
+                            <div class="button mt-4 mb-2">
+                                <a href="#" class="btn btn-primary me-3 shadow-none">BOOK</a>
+                                <a href="#" class="btn btn btn-outline-dark fw-bold  me-lg-2 shadow-none ">More Info</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-4">
+                    <div class="card shadow" style="width: 350px; margin: auto; border: none;">
+                        <img src="pictures/k13.jpeg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="mb-2 fw-bold">Single Room With Bathroom</h5>
+                            <span class="badge bg-success text-wrap lh-base mb-2">₹2000/month</span>
+                            <div class="features mt-2">
+                                <h6 class="mb-2 fw-bold">Features</h6>
+                                <span class="badge bg-light  text-dark  text-wrap lh-base">2 Beds</span>
+                                <span class="badge bg-light  text-dark text-wrap lh-base">1 Bathroom</span>
+                                <span class="badge bg-light text-dark  text-wrap lh-base ">Cooking Area</span>
+                                <span class="badge bg-light text-dark text-wrap lh-base">2 Adults</span>
+
+                            </div>
+                            <div class="facilities mt-4 mb-2">
+                                <h6 class="mb-2 fw-bold">Facilities</h6>
+                                <span class="badge bg-light  text-dark  text-wrap lh-base">24/7 Electric</span>
+                                <span class="badge bg-light  text-dark text-wrap lh-base">Driking Water</span>
+                                <span class="badge bg-light text-dark  text-wrap lh-base ">Fan and Light</span>
+                            </div>
+                            <div class="rating mt-4 mb-2">
+                                <h6 class="mb-2 fw-bold">Ratings</h6>
+                                <div class="container">
+                                    <i class="bi bi-star-fill" style="color:goldenrod;"></i>
+                                    <i class="bi bi-star-fill" style="color:goldenrod;"></i>
+                                    <i class="bi bi-star-fill" style="color:goldenrod;"></i>
+                                    <i class="bi bi-star-fill" style="color:goldenrod;"></i></div>
+                            </div>
+                            <div class="button mt-4 mb-2">
+                                <a href="#" class="btn btn-primary me-3 shadow-none">BOOK</a>
+                                <a href="#" class="btn btn btn-outline-dark fw-bold  me-lg-2 shadow-none ">More Info</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="col-lg-4">
+                    <div class="card shadow" style="width: 350px; margin: auto; border: none;">
+                        <img src="pictures/k13.jpeg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="mb-2 fw-bold">Single Room With Bathroom</h5>
+                            <span class="badge bg-success text-wrap lh-base mb-2">₹2000/month</span>
+                            <div class="features mt-2">
+                                <h6 class="mb-2 fw-bold">Features</h6>
+                                <span class="badge bg-light  text-dark  text-wrap lh-base">2 Beds</span>
+                                <span class="badge bg-light  text-dark text-wrap lh-base">1 Bathroom</span>
+                                <span class="badge bg-light text-dark  text-wrap lh-base ">Cooking Area</span>
+                                <span class="badge bg-light text-dark text-wrap lh-base">2 Adults</span>
+
+                            </div>
+                            <div class="facilities mt-4 mb-2">
+                                <h6 class="mb-2 fw-bold">Facilities</h6>
+                                <span class="badge bg-light  text-dark  text-wrap lh-base">24/7 Electric</span>
+                                <span class="badge bg-light  text-dark text-wrap lh-base">Driking Water</span>
+                                <span class="badge bg-light text-dark  text-wrap lh-base ">Fan and Light</span>
+                            </div>
+                            <div class="rating mt-4 mb-2">
+                                <h6 class="mb-2 fw-bold">Ratings</h6>
+                                <div class="container">
+                                    <i class="bi bi-star-fill" style="color:goldenrod;"></i>
+                                    <i class="bi bi-star-fill" style="color:goldenrod;"></i>
+                                    <i class="bi bi-star-fill" style="color:goldenrod;"></i>
+                                    <i class="bi bi-star-fill" style="color:goldenrod;"></i></div>
+                            </div>
+                            <div class="button mt-4 mb-2">
+                                <a href="#" class="btn btn-primary me-3 shadow-none">BOOK</a>
+                                <a href="#" class="btn btn btn-outline-dark fw-bold  me-lg-2 shadow-none ">More Info</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center  mt-4 mb-2">
+                        <a href="#" class="btn btn-primary me-3 me-lg-2 shadow-none">More Apartments >>></a>
+                            
+                </div>
+                
+            </div>
+        </div> 
+        
+<!--testinomials-->
+        <H2 class="mt-5 text-center mb-5"> Endorsement</H2>
+        <div class="container shadow bg-light">
+            <div class="swiper testo-Swiper">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+                        <div class="user d-flex align-items-center">
+                            <img src="pictures/k10.jpeg" width="100px" />
+                            <H3 class="mt-2 mb-2 ms-4"> User1</H3>
+                        </div>
+                            <p class="mt-2">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum ipsum inventore minus asperiores rem fugit architecto facere aspernatur corporis. 
+                                Cupiditate deleniti impedit ex voluptate. Sunt, eum voluptas? Nihil, velit incidunt.
+                            </p>
+                            <i class="bi bi-star-fill" style="color:goldenrod;"></i>
+                            <i class="bi bi-star-fill" style="color:goldenrod;"></i>
+                            <i class="bi bi-star-fill" style="color:goldenrod;"></i>
+                            <i class="bi bi-star-fill" style="color:goldenrod;"></i>
+                    </div>
+                    
+                    <div class="swiper-slide">
+                        <div class="user d-flex align-items-center">
+                            <img src="pictures/k10.jpeg" width="100px" />
+                            <H3 class="mt-2 mb-2 ms-4"> User3</H3>
+                        </div>
+                            <p class="mt-2">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum ipsum inventore minus asperiores rem fugit architecto facere aspernatur corporis. 
+                                Cupiditate deleniti impedit ex voluptate. Sunt, eum voluptas? Nihil, velit incidunt.
+                            </p>
+                            <i class="bi bi-star-fill" style="color:goldenrod;"></i>
+                            <i class="bi bi-star-fill" style="color:goldenrod;"></i>
+                            <i class="bi bi-star-fill" style="color:goldenrod;"></i>
+                            <i class="bi bi-star-fill" style="color:goldenrod;"></i>
+                    </div>
+                    
+                    <div class="swiper-slide">
+                        <div class="user d-flex align-items-center">
+                            <img src="pictures/k10.jpeg" width="100px" />
+                            <H3 class="mt-2 mb-2 ms-4"> User2</H3>
+                        </div>
+                            <p class="mt-2">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum ipsum inventore minus asperiores rem fugit architecto facere aspernatur corporis. 
+                                Cupiditate deleniti impedit ex voluptate. Sunt, eum voluptas? Nihil, velit incidunt.
+                            </p>
+                            <i class="bi bi-star-fill" style="color:goldenrod;"></i>
+                            <i class="bi bi-star-fill" style="color:goldenrod;"></i>
+                            <i class="bi bi-star-fill" style="color:goldenrod;"></i>
+                            <i class="bi bi-star-fill" style="color:goldenrod;"></i>
+                    </div>
+                    
+                    <div class="swiper-slide">
+                        <div class="user d-flex align-items-center">
+                            <img src="pictures/k10.jpeg" width="100px" />
+                            <H3 class="mt-2 mb-2 ms-4"> User4</H3>
+                        </div>
+                            <p class="mt-2">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum ipsum inventore minus asperiores rem fugit architecto facere aspernatur corporis. 
+                                Cupiditate deleniti impedit ex voluptate. Sunt, eum voluptas? Nihil, velit incidunt.
+                            </p>
+                            <i class="bi bi-star-fill" style="color:goldenrod;"></i>
+                            <i class="bi bi-star-fill" style="color:goldenrod;"></i>
+                            <i class="bi bi-star-fill" style="color:goldenrod;"></i>
+                            <i class="bi bi-star-fill" style="color:goldenrod;"></i>
+                    </div>
+                    
+                    <div class="swiper-slide">
+                        <div class="user d-flex align-items-center">
+                            <img src="pictures/k10.jpeg" width="100px" />
+                            <H3 class="mt-2 mb-2 ms-4"> User5</H3>
+                        </div>
+                            <p class="mt-2">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum ipsum inventore minus asperiores rem fugit architecto facere aspernatur corporis. 
+                                Cupiditate deleniti impedit ex voluptate. Sunt, eum voluptas? Nihil, velit incidunt.
+                            </p>
+                            <i class="bi bi-star-fill" style="color:goldenrod;"></i>
+                            <i class="bi bi-star-fill" style="color:goldenrod;"></i>
+                            <i class="bi bi-star-fill" style="color:goldenrod;"></i>
+                            <i class="bi bi-star-fill" style="color:goldenrod;"></i>
+                    </div>
+
+
+
+
+
+
+                </div>
+            </div>
+        </div>
+
+<!--reach us-->
+        <H2 class="mt-5 text-center mb-5"> Reach Us</H2>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <iframe width="800px" height="400px" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3660.8248033844407!2d88.32759741489842!3d23.430695084747896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f91cd19a23e8c1%3A0xeee9e53e17b039fa!2sJahannagar%20Kumarananda%20High%20School(J.K.H.S.)!5e0!3m2!1sen!2sin!4v1676384542448!5m2!1sen!2sin" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="col-lg-4 " style="background-color: blueviolet;">
+                    <div class="mb-4 bg-light p-4 mt-2 ms-2  me-4">
+                        <h5>Call Us</h5>
+                        <a href="tel:7319425477" class="text-decoration-none d-inline-block text-dark">
+                            <i class="bi bi-telephone-outbound-fill me-2"></i>+917319425477</a>
+                    </div>
+                    <div class="mb-4 bg-light p-4 mt-2 ms-2  me-4">
+                        <h5>Mail Us</h5>
+                        <a href="mail:kaushikpal098@gmail.com" class="text-decoration-none d-inline-block text-dark">
+                            <i class="bi bi-envelope-at-fill me-2"></i>kaushikpal098@gmail.com</a>
+                    </div>
+                    <div class="mb-4 bg-light p-4 mt-2 ms-2  me-4">
+                        <h5>Follow Us</h5>
+                        <a href="#" class="text-decoration-none d-inline-block fs-3 me-3">
+                            <i class="bi bi-twitter"></i></a>
+                        <a href="#" class="text-decoration-none d-inline-block fs-3 me-3">
+                            <i class="bi bi-facebook"></i></a>
+                         <a href="#" class="text-decoration-none d-inline-block fs-3">
+                            <i class="bi bi-instagram"></i></a>    
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<!--footer-->
+   <nav style="background-color: rgb(50, 47, 47);" class="mt-5 ">
+        <div class="container mt-4 ">
+                <div class="row">
+                    <div class="col-lg-4 text-white ">
+                        <h2 class="hfont mt-4 mb-5">Ryo Rooms</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Quo delectus enim pariatur a et cum iure repellendus consequatur 
+                            architecto ut!
+                        </p>
+                    </div>
+                    <div class="col-lg-1 mt-4 mb-2" style="border-left: 1px solid grey; height: 300px;"></div>
+
+                    <div class="col-lg-3 text-white ">
+                        <h2 class=" mt-4 mb-5">Quick Links</h2>
+                        <a href="home" class=" d-inline-block text-decoration-none text-white ">Home</a><br>
+                        <a href="#"class=" d-inline-block text-decoration-none text-white mt-2">Rooms </a><br>
+                        <a href="#"class="d-inline-block text-decoration-none text-white mt-2">Apartments</a><br>
+                        <a href="contact.html"class="d-inline-block text-decoration-none text-white mt-2">Contact Us</a><br>
+                        <a href="about.html"class="d-inline-block text-decoration-none text-white mt-2 ">About Us</a>
+                    </div>
+                    <div class="col-lg-1 mt-4 mb-2 " style="border-left: 1px solid grey; height: 300px;"></div>
+
+
+                </div>
+        </div>
+    </nav> 
+
+<!--sticky-->
+<nav class="navbar " style="background-color: black; border-top: 1px solid white;">
+    <div class="container-fluid p-2 ">
+       <h2 class="hfont  ms-4" style="color: aqua;" >Ryo Rooms</h2>
+        <form class="d-flex ">
+            <a href="#" class="me-3 text-decoration-none text-white">Privacy Policy</a>
+            <a href="#" class="me-5 text-decoration-none text-white">Security Policy</a>
+        </form>
+    </div>
+  </nav>
+     
+
+
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 30,
+      effect: "fade",
+      loop:true,
+      autoplay:{
+        delay:2000,
+        displayonInteraction:false,
+      }
+      
+    });
+
+    var swiper = new Swiper(".testo-Swiper", {
+      effect: "flip",
+      grabCursor: true,
+      pagination: {
+        el: ".swiper-pagination",
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+  
+
+</body>
+</html>

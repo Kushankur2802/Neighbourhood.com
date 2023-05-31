@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>about</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&family=Poppins:ital,wght@0,500;0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="css.css">
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white px-lg-3 py-lg-2 sticky-top shadow-sm">
+        <div class="container-fluid">
+        <a class="navbar-brand me-5 fw-bold  fs-3 hfont" href="#">RYO ROOMS</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+            <a class="nav-link active me-3" aria-current="page" href="home.html">Home</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link me-3" href="#">ROOMS</a>
+            </li>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link me-3" href="#">FACILITIES</a>
+            </li>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link me-3" href="contact.html">CONTACT US</a>
+            </li>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link me-25" href="about.html">ABOUT</a>
+            </li>
+              
+            </ul>
+            <div class="flex mb-2">
+                <button type="button" class="btn btn-primary me-3 me-lg-2 shadow-none" data-bs-toggle="modal" data-bs-target="#loginmodal">
+                    Login
+                </button>
+            </div>
+            <div class="flex mb-2">
+                <button type="button" class="btn btn-primary me-3 me-lg-2 shadow-none" data-bs-toggle="modal" data-bs-target="#registrationmodal">
+                    Register
+                </button>
+            </div>        
+          </div>  
+         </div>
+        </div>
+    </nav>
+ <!-- login Modal -->
+        <div class="modal fade" id="loginmodal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">
+                    <i class="bi bi-person-square me-2 fs-3"></i>  User Login</h5>
+                <button type="reset" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label">Email address</label>
+                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleInputPassword1" class="form-label">Password</label>
+                          <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between">
+                        <button type="submit" class="btn btn-primary ">Login</button>
+                        <a href="#" class="text-decoration-none">Forgot Password</a>
+                        </div>
+                    </form>
+                </div>
+                
+            </div>
+            </div>
+        </div>
+ <!-- register Modal -->
+        <div class="modal fade" id="registrationmodal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">
+                  <i class="bi bi-person-vcard me-2 fs-3"></i>User Registration</h5>
+                <button type="reset" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <span class="badge bg-info text-dark mb-3 text-wrap lh-base">Note: Details must be match with id</span>
+                   <div class="container-fluiid">
+                    <div class="row">
+                        <div class="col-md-6 mb-2">
+                        
+                                <label for="exampleInputEmail1" class="form-label">Name</label>
+                                <input type="name" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                         </div>
+                         <div class="col-md-6 mb-2">
+                        
+                                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                         </div>
+                        <div class="col-md-6 mb-2">
+                        
+                                <label for="exampleInputEmail1" class="form-label">Phone Number</label>
+                                <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        </div>
+                        <div class="col-md-6 mb-2">
+                        
+                                <label for="exampleInputEmail1" class="form-label">Pcture</label>
+                                <input type="file" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        </div>
+                        <div class=" mb-3">
+
+                                <label for="exampleFormControlTextarea1" class="form-label">Address</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
+                            
+                         </div>
+                         <div class="col-md-6 mb-2">
+                            
+                                <label for="exampleInputEmail1" class="form-label">Pincode</label>
+                                <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        </div>
+                        <div class="col-md-6 mb-2">
+                        
+                                <label for="exampleInputEmail1" class="form-label">Date of Birth</label>
+                                <input type="date" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        </div>
+                        <div class="col-md-6 mb-2">
+                            
+                            <label for="exampleInputEmail1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                         </div>
+                        <div class="col-md-6 mb-2">
+                        
+                                <label for="exampleInputEmail1" class="form-label">Confirm Password</label>
+                                <input type="password" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        </div>
+                    </div>
+                   </div>
+                 </div>
+             </div>
+            </div>
+        </div>
+
+<!--overview-->
+        <nav class="navbar navbar-light bg-light" style="  background-image: linear-gradient(to right, rgb(28, 189, 28) , DodgerBlue);        ">
+            <div class="container-fluid">
+              <span class="navbar-brand mb-0 h1 p-4"><h2>About Us</h2></span>
+            </div>
+          </nav>
+        
+          <div class="container mt-5 text-center">
+            <h2 class=" mb-3" style="color: darkblue;">Company Overview</h2>
+            <h4 style="font-family:'Times New Roman', Times, serif;">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet.</h4>
+            <p class="mt-3">
+                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis, libero eaque.
+                Sequi quia ratione ducimus aliquam eum voluptatum rerum consequuntur voluptate at porro! Earum, quaerat a. 
+                Id eius minima doloremque aspernatur dolorem enim ad odio recusandae quam? Blanditiis animi incidunt eligendi dicta veniam, 
+                consequatur, cupiditate placeat temporibu.
+                <br>
+                Whether to run your business more efficiently or boost your revenue, Ryo Rooms can get you there.
+             </p>
+
+          </div>
+        <div class="container align-items-evenly" style="padding-top: 50px;">
+            <div class="row justify-content-between align-items-center">
+                <div class="col-lg-6">
+                    <h2>Mr. Founder</h2>
+                    <p class="px-lg-6 py-lg-4">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, hic. Hic et ratione quod fugiat facere quidem. Velit, 
+                        laboriosam accusamus beatae voluptatibus nisi accusantium perspiciatis voluptatum, fugiat, animi dolores doloribus?
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut necessitatibus autem ab eveniet magni perspiciatis quas
+                         suscipit praesentium velit commodi.
+    
+                    </p>
+                </div>
+                <div class="col-lg-5">
+                    <img src="pictures/m.jpg" class="w-100 rounded">
+                </div>
+                <div class="col-lg-5 mt-3">
+                    <img src="pictures/m2.jpg" class="w-100 rounded">
+    
+                    </p>
+                </div>
+                <div class="col-lg-6 m">
+                    <h2>Mr. Co-Founder</h2>
+                    <p class="px-lg-6 py-lg-4">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, hic. Hic et ratione quod fugiat facere quidem. Velit, 
+                        laboriosam accusamus beatae voluptatibus nisi accusantium perspiciatis voluptatum, fugiat, animi dolores doloribus?
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut necessitatibus autem ab eveniet magni perspiciatis quas
+                         suscipit praesentium velit commodi.
+                </div>
+            </div>
+        </div>
+
+<!--grid-->
+        <div class="containem mt-5">
+            <div class="row">
+                <div class="col-lg-4 ">
+                    <div class="card shadow" style="width: 450px; margin: auto; border: none;">
+                        <div class="card-body text-white" style="padding-top: 70px; padding-bottom: 70px; background-color: green;">
+                            <h2 class="mb-4">Unique strategies </h2>
+                            <p>
+                                RyoRooms offer excellent skills and progressive perspective to resolve customer challenges. 
+                                We use our experience count in offering guidance and support to our clients.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card shadow" style="width: 450px; margin: auto; border: none;">
+                        <div class="card-body text-white" style="padding-top: 70px; padding-bottom: 70px; background-color: rgb(150, 37, 202);">
+                            <h2 class="mb-4">Relentless Dedication
+                            </h2>
+                            <p>
+                                Customer success and satisfaction is our priority. RyoRooms is determined to offer tireless 
+                                commitment as we don’t do any kind of work compromise.
+                            </p> 
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card shadow" style="width: 450px; margin: auto; border: none;">
+                        <div class="card-body  text-white" style="padding-top: 70px; padding-bottom: 70px; background-color: rgb(56, 56, 217);">
+                            <h2 class="mb-4">Business growth
+                            </h2>
+                            <p>
+                                RyoRooms aims to help your business grow and accelerate your revenue growth.
+                                We give a top tier digital platform so that you can advance digitally helpful.
+
+
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+  
+        <nav class="navbar navbar-light bg-light text-white " style="  background-image: linear-gradient(to right,rgb(48, 186, 48) , DodgerBlue); margin-top: 100px; padding: 100px;padd       ">
+            <div class="container ">
+               <span class="text-center"><h2 class="mb-4" >Celebrating Unending Future Possibilities
+                </h2>
+                <p>
+                    We offer assistance to businesses of various sizes from start-ups to small businesses and big enterprises.
+                    We have been expanding our client ecosystem around the globe.
+                </p>
+                </span>
+            </div>
+          </nav>
+    <!--fooooooooooooooooooooooter-->  
+    
+    <!--footer-->
+   <nav style="background-color: rgb(50, 47, 47);" class="mt-5 ">
+    <div class="container mt-4 ">
+            <div class="row">
+                <div class="col-lg-4 text-white ">
+                    <h2 class="hfont mt-4 mb-5">Ryo Rooms</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Quo delectus enim pariatur a et cum iure repellendus consequatur 
+                        architecto ut!
+                    </p>
+                </div>
+                <div class="col-lg-1 mt-4 mb-2" style="border-left: 1px solid grey; height: 300px;"></div>
+
+                <div class="col-lg-3 text-white ">
+                    <h2 class=" mt-4 mb-5">Quick Links</h2>
+                    <a href="home.html" class=" d-inline-block text-decoration-none text-white ">Home</a><br>
+                    <a href="#"class=" d-inline-block text-decoration-none text-white mt-2">Rooms </a><br>
+                    <a href="#"class="d-inline-block text-decoration-none text-white mt-2">Apartments</a><br>
+                    <a href="contact.html"class="d-inline-block text-decoration-none text-white mt-2">Contact Us</a><br>
+                    <a href="about.html"class="d-inline-block text-decoration-none text-white mt-2 ">About Us</a>
+                </div>
+                <div class="col-lg-1 mt-4 mb-2 " style="border-left: 1px solid grey; height: 300px;"></div>
+
+
+            </div>
+    </div>
+</nav> 
+
+<!--sticky-->
+<nav class="navbar " style="background-color: black; border-top: 1px solid white;">
+<div class="container-fluid p-2 ">
+   <h2 class="hfont  ms-4" style="color: aqua;" >Ryo Rooms</h2>
+    <form class="d-flex ">
+        <a href="#" class="me-3 text-decoration-none text-white">Privacy Policy</a>
+        <a href="#" class="me-5 text-decoration-none text-white">Security Policy</a>
+    </form>
+</div>
+</nav>
+ 
+        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</html>

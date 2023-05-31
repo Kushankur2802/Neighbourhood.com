@@ -1,0 +1,13 @@
+*{
+    font-family: 'Merienda', cursive;
+}
+hfont{
+    font-family: 'Poppins', sans-serif;  
+    
+
+}
+.availability{
+margin-top: -50px;
+z-index: 2;
+position:relative;
+}
